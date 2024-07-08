@@ -1,38 +1,9 @@
-# Template for the University of Bern PhD thesis
+# PhD thesis - Sergio Tascon-Morales
 
-This is an **unofficial** template for the for the GCB of the University of Bern PhD thesis. It uses the [EPFL PhD thesis template](https://github.com/glederrey/EPFL_thesis_template) for the main body of the thesis, and follows the GCB of university of Bern guidelines for the first and last pages (have a look [here](https://www.gcb.unibe.ch/phd_program/phd_degree/index_eng.html) for the GCB PhD thesis guidelines). [This](https://github.com/stergioc/unibe-thesis-latex-template) GCB template was also used.
+##  Abstract 
 
-## FAQ 
+In recent years, deep learning models have become an integral part of the daily lives of millions, extending their influence into specific domains such as medicine. The integration of vision and language capabilities has notably facilitated smoother interactions between users and models. Questions and answers have long served not only as a means of interaction with machines but also as a test for evaluating their level of intelligence. In particular, inquiries related to visual content, encapsulated by Visual Question Answering (VQA), provide a mechanism to probe a model's visual understanding. In the medical domain, this aspect holds considerable significance, given the crucial role that trust plays in the adoption of these systems by medical professionals. However, the often opaque nature of most models hinders the assessment of true visual understanding, concealing potential shortcuts and biases. Crucial aspects of reasoning, such as compositionality and consistency, are at times overlooked in favor of high overall performance. In line with this perspective, this work introduces several contributions in the domains of localized questions and consistency for VQA.
 
-**The compilation fails: it says "LaTeX Error: Unknown option `explicit` for package `titlesec`**
-> The package titlesec has been modified in 2007 to include an option which allows more customization of the chapter titles. This template relies heavily on this option. In order to resolve this, you need to update to a more recent version (either your full Latex-Distribution or at least the titlesec package).
+The first part of the thesis explores questions about specific image regions. Two distinct methodologies are proposed. The first method employs a localized attention mechanism, integrating information about the target region through a binary mask. Localized attention allows the network to consider contextual cues necessary for answering the question, focusing subsequently on the region specified by the user. The second method extends the concept of localized questions to Multimodal Large Language Models (MLLMs) by introducing targeted visual prompting. Here, a customized visual prompt is formulated, encompassing the isolated region and its contextual representation within the image.
 
-**I have a problem with special characters, the compilation fails as soon as there is a special character in my file**
-> For best cross-platform compatibility, the template is configured for "UTF-8" input encoding instead of platform specific encodings (such as "Western-Latin for Mac"). In your Latex-Editor, be sure that the files are saved with this encoding.
-(In TeX-Shop for Mac: Preferences -&gt; Source-Code -&gt; Encoding -&gt; "UTF-8". You'll need to re-open and save the files in order to make the change happen).
-
-**I'm using "mhchem" for typesetting chemical formula and there is a bug in the compilation**
-> This package is under active development: it has been updated on 2011/06/03 to version 3.11 correcting for an incompatibilty with some font-related packages. Please update your Latex-distribution to this latest version of mhchem by downloading the newest version from CTAN and replacing your existing mhchem.sty file by the newer version.
-
-**I want to use Tex+dvi for compiling my files, because I have a lot of .eps graphics and I don't want to convert all of them and use pdftex for compiling my files**
-> Never mind for the .eps files: the pdftex compiler is able to convert them automatically to .pdf files. In some configurations you will not even need to do anything besides specifying the full graphic-file-names (ex: "mybeautifuleps.eps"). If this fails, you can still include the [epstopdf](https://ctan.org/pkg/epstopdf?lang=en) package manually.
-The template chapter header styles are unfortunately not (yet) compatible with tex+dvi compilation, so there is really no way around the pdftex compiler at the very moment if you want to use this template.
-
-**The compilation fails with the error message "! pdfTeX error (font expansion): auto expansion is only possible with scalable fonts**
-> This error stems from an incompatibility of your system with the font used for the titlepage. We might change this for the whole template design soon, but in the mean time, just open "head/titlepage.tex" -&gt; go to line 4 and put the line in comment by adding a "%" in front of the line such that it reads "%\sffamily". After this the compilation should work.
->
-> Another solution to this problem (tested on Windows 10) is the following:
->  1. Start "MiKTeX Settings (Admin)"
->  2. Press "Refresh FNDB"
->  3. Press "Update Formats"
->  4. Press "OK" (to close the app)
->  5. Clean auxiliary files (.aux and .out)
->  6. Recompile and everything should work.
-
-## Contributors
-
-* ??? (Original creator)
-* Diogo Rodrigues (Fixed latex -> dvips -> ps2pdf version + other minor problems)
-* Mahdi Khoramshahhi (Added a fix for the bug on the font expansion) 
-* Léo Belzile (Changed the logo, tidy up the code, fixed some bugs)
-* Stergios Christodoulidis & Tatiana Fountoukidou (merged with the UniBe GCB guidelines)[**current version**]
+The second part of the thesis focuses on avoiding contradictions by enhancing consistency. The first method involves categorizing queries as perception vs. reasoning questions and utilizing a loss function term to penalize inconsistencies during training. The second method proposes a broader interpretation of consistency in VQA based on logical relations and introduces an auxiliary method for predicting these relations. Similar to the first method, this approach employs a loss term to enforce more consistent behavior during the training phase.
