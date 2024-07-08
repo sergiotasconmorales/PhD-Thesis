@@ -1,0 +1,19 @@
+\chapter{Targeted Visual Prompting for Medical Visual Question Answering}
+\label{chapter:locvqallm}
+% MICCAI 2023 paper about localized questions
+
+
+
+With growing interest in recent years, \gls{medvqa} has rapidly evolved with \glspl{mllm} emerging as an alternative to classical model architectures. Specifically, their ability to add visual information to the input of pre-trained \glspl{llm} brings new capabilities for image interpretation. However, simple visual errors cast doubt on the actual visual understanding abilities of these models. To address this, region-based questions have been proposed as a means to assess and enhance actual visual understanding through compositional evaluation. To combine these two perspectives, this work introduces targeted visual prompting to equip \glspl{mllm} with region-based questioning capabilities. By presenting the model with both the isolated region and the region in its context in a customized visual prompt, we show the effectiveness of our method across multiple datasets while comparing it to several baseline models.
+
+\textbf{Author Contribution} Co-authored alongside Raphael Sznitman and Plablo Márquez-Neila, my contributions to this project involved creating datasets, formulating methodologies, designing experiments, analyzing and visualizing results, and composing the manuscript.
+
+\textbf{Publication} This work has been submitted to the MICCAI 2024 conference.
+
+\newpage
+
+% Contents
+\input{Parts/Part1_LocVQA/02_locvqa_llm/01_background_previous}
+\input{Parts/Part1_LocVQA/02_locvqa_llm/02_method}
+\input{Parts/Part1_LocVQA/02_locvqa_llm/03_experiments_results}
+\input{Parts/Part1_LocVQA/02_locvqa_llm/04_conclusion}

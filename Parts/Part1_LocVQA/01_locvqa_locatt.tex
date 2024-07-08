@@ -1,0 +1,24 @@
+\chapter{Localized Questions in Medical Visual Question Answering}
+\label{chapter:locvqa}
+% MICCAI 2023 paper about localized questions
+
+The task of \gls{vqa} has seen a relatively rapid development since it was first introduced back in 2015. With a few exceptions, \gls{vqa} models have been applied to datasets with questions that refer to the entire image. This, however, can limit the interpretability of the model's predictions, as the model can benefit from biases in the data to produce the correct answer while disregarding the parts of the image that contain key information to answer the question. Furthermore, localized questions allow the comparison and quantification of agreement between questions about images and questions about regions. In this work, we present an attention-based method for medical \gls{vqa} that enables the posing of questions about specific user-defined regions of an image while considering the context required to answer them. We benchmark our approach across multiple datasets and against different baselines, showing its effectiveness. 
+
+\textbf{Author Contribution} The contributing authors to this work are Pablo Márquez-Neila and Raphael Sznitman. My contributions to this chapter include the creation of the datasets, the development of the methodology, the conception and realization of the experiments, data analysis and interpretation, and visualization as well as the writing of the manuscript.
+
+\textbf{Publication}  This work is published in the Proceedings of the MICCAI 2023 conference \cite{tascon2023localized}.
+
+\newpage
+
+% Paper contents
+\input{Parts/Part1_LocVQA/01_locvqa_locatt_sections/01_background_previous}
+\input{Parts/Part1_LocVQA/01_locvqa_locatt_sections/02_method}
+\input{Parts/Part1_LocVQA/01_locvqa_locatt_sections/03_experiments_results}
+\input{Parts/Part1_LocVQA/01_locvqa_locatt_sections/04_conclusion}
+
+
+
+
+
+
+

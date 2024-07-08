@@ -1,0 +1,20 @@
+\chapter{Consistency-preserving Visual Question Answering in Medical Imaging}
+\label{chapter:cons_mainsub}
+% MICCAI 2022 paper about consistency by including annotations about main and sub
+
+Since \gls{vqa} models can be asked multiple questions about the same image, one important aspect of their behavior is what constraints there should be in the answers, given that the questions are related. This is, what level of agreement there should be in the answers so that these do not produce a contradiction. Most of the research in \gls{medvqa} has been focused on improving architectures and working with limited data, while consistency has been overlooked.  
+
+In this work, we tackle the issue of inconsistency in \gls{medvqa} by using a novel loss function term and corresponding training strategy that allows us to consider relations between question-answer pairs in the training process. Following previous approaches from natural images, we examine the case in which the relation between reasoning and perception questions is known. We evaluate our proposed approach on the task of \gls{dme} staging from fundus images. Our experimental results show that our approach enhances not only the consistency of the model but also the overall performance.
+
+
+\textbf{Author Contribution} This work was co-authored with Pablo Márquez-Neila and Raphael Sznitman. My contributions include the dataset creation, the formulation and implementation of the method, the experimental setup, result analysis and visualization, and the composition of the manuscript. 
+
+\textbf{Publication} This work is published in the Proceedings of the MICCAI 2022 conference~\cite{tascon2022consistency}.
+
+\newpage
+
+% Paper contents
+\input{Parts/Part2_Consist/01_cons_mainsub_sections/01_background_previous}
+\input{Parts/Part2_Consist/01_cons_mainsub_sections/02_method}
+\input{Parts/Part2_Consist/01_cons_mainsub_sections/03_experiments_results}
+\input{Parts/Part2_Consist/01_cons_mainsub_sections/04_conclusion}

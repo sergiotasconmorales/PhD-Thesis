@@ -1,0 +1,13 @@
+\begin{abstract}[]
+\addchaptertocentry{\abstractname} 
+In recent years, deep learning models have become an integral part of the daily lives of millions, extending their influence into specific domains such as medicine. The integration of vision and language capabilities has notably facilitated smoother interactions between users and models. Questions and answers have long served not only as a means of interaction with machines but also as a test for evaluating their level of intelligence. In particular, inquiries related to visual content, encapsulated by Visual Question Answering (VQA), provide a mechanism to probe a model's visual understanding. In the medical domain, this aspect holds considerable significance, given the crucial role that trust plays in the adoption of these systems by medical professionals. However, the often opaque nature of most models hinders the assessment of true visual understanding, concealing potential shortcuts and biases. Crucial aspects of reasoning, such as compositionality and consistency, are at times overlooked in favor of high overall performance. In line with this perspective, this work introduces several contributions in the domains of localized questions and consistency for VQA.
+
+\medskip
+
+% First part
+The first part of the thesis explores questions about specific image regions. Two distinct methodologies are proposed. The first method employs a localized attention mechanism, integrating information about the target region through a binary mask. Localized attention allows the network to consider contextual cues necessary for answering the question, focusing subsequently on the region specified by the user. The second method extends the concept of localized questions to Multimodal Large Language Models (MLLMs) by introducing targeted visual prompting. Here, a customized visual prompt is formulated, encompassing the isolated region and its contextual representation within the image.
+
+\medskip
+The second part of the thesis focuses on avoiding contradictions by enhancing consistency. The first method involves categorizing queries as perception vs. reasoning questions and utilizing a loss function term to penalize inconsistencies during training. The second method proposes a broader interpretation of consistency in VQA based on logical relations and introduces an auxiliary method for predicting these relations. Similar to the first method, this approach employs a loss term to enforce more consistent behavior during the training phase.
+
+\end{abstract}

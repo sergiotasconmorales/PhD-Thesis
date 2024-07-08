@@ -1,0 +1,19 @@
+\chapter{Logical Implications for Visual Question Answering Consistency}
+\label{chapter:cons_logic}
+% CVPR 2023 paper about consistency through logical relations
+
+The previous chapter presented a method to encourage a \gls{vqa} method to be more consistent by considering pairs of reasoning and perception questions and their relationship. While this consideration is useful for imposing a more consistent behavior, the relation of main and sub (or reasoning and perception) between QA pairs requires assumptions about the nature of the questions. We observe that a more general definition of consistency is required, and explore, from the perspective of logic, the possible relations that can exist between the propositions that the QA pairs represent. 
+
+The present work presents a more general framework for consistency enforcement and assessment. We make use of concepts from logic in order to establish a more robust definition of inconsistency. Then, we encourage the model to provide more consistent answers by integrating annotations about logical relations between pairs of propositions into the training process. Since these annotations are not commonly included in \gls{vqa} datasets, we propose an auxiliary method to predict them. We evaluate our method on multiple architectures and across different datasets with both natural and medical images, showing that our consistency framework improves the overall performance of the model while reducing inconsistencies.
+
+\textbf{Author Contribution} The co-authors of this work are Pablo Márquez-Neila and Raphael Sznitman. My contributions are as follows: Data annotation, dataset creation, methodology and implementation thereof, experimental design, result analysis, and visualization, as well as the writing of the manuscript.
+
+\textbf{Publication} This work is published in the Proceedings of the CVPR 2023 conference~\cite{tascon2023logical}.
+
+\newpage
+
+% Paper contents
+\input{Parts/Part2_Consist/02_cons_logic_sections/01_background_previous}
+\input{Parts/Part2_Consist/02_cons_logic_sections/02_method}
+\input{Parts/Part2_Consist/02_cons_logic_sections/03_experiments_results}
+\input{Parts/Part2_Consist/02_cons_logic_sections/04_conclusion}
